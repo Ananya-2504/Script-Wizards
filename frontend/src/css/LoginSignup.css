@@ -1,0 +1,111 @@
+/* Container for login/signup forms */
+.login-signup-container{
+  background-image: url("https://c0.wallpaperflare.com/preview/425/460/897/wallpaper-background-stamps-post-office.jpg");
+}
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #6c63ff, #3b5998); Gradient background */
+  /* add shadow */
+  font-family: Snell Roundhand, cursive; /* Clean font for better readability */
+}
+
+/* Form Container */
+.form-container {
+  /* background-color: #ffffff; */
+  background-image: url("../login-background.png");
+  /* background-size: cover; */
+  /* crop the image */
+  /* background-position: center; */
+  /* zoom into the image */
+  /* background-repeat: no-repeat; */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for the form */
+.form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Form Input Fields */
+form input {
+  width: 90%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* Focus effect for input fields */
+form input:focus {
+  border-color: #6e4e30;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6e4e30;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  /* box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); */
+}
+
+/* Hover effect for the button */
+form button:hover {
+  background-color: #5d4026;
+  /* box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); */
+}
+
+/* Toggle Link */
+.toggle-link {
+  margin-top: 20px;
+  color: #6e4e30;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover effect for the link */
+.toggle-link:hover {
+  color: #6e4e30;
+}
+
+/* Optional: Add subtle animation to form */
+.form-container {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
